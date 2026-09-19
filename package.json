@@ -2,7 +2,7 @@
   "name": "777-liquor-website-cloudflare",
   "private": true,
   "scripts": {
-    "build": "npm --prefix 777-Liquor-Website/website install && npm --prefix 777-Liquor-Website/website run build",
+    "build": "npm install && cd 777-Liquor-Website/website && bun install && bun run build",
     "deploy": "npm run build && npx wrangler deploy"
   },
   "devDependencies": {
