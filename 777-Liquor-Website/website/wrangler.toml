@@ -1,0 +1,58 @@
+# ── Deploy config for the 777 Liquor website on Cloudflare Workers ──
+# Converted from wrangler.jsonc. From the website/ directory:
+#   bun install && bun run build && wrangler deploy
+#
+# Bindings (D1/R2/KV/DO) are NOT declared here — app.manifest.json currently
+# has db / r2 / kv disabled, so none are needed. If you opt into one later,
+# uncomment the matching block in the OPT-IN INFRA section below.
+#
+# `name` must be a valid Cloudflare Worker name (lowercase + dashes, 3–63 chars).
+name = "777-liquor-website"
+
+# The Worker entry is the TanStack Start SSR server bundle — `vite build`
+# emits dist/server/server.js (`export default { fetch }`).
+main = "dist/server/server.js"
+compatibility_date = "2025-05-01"
+compatibility_flags = ["nodejs_compat"]
+
+[observability]
+enabled = true
+
+# SSR asset routing: static files in dist/client are served directly
+# (asset-first); any non-asset path — including "/" — falls through to the
+# SSR Worker (no index.html ships, so "/" never matches an asset).
+# Do NOT set run_worker_first = true — that makes the Worker intercept
+# /assets/* and 404 them (the SSR handler has no asset route).
+[assets]
+directory = "./dist/client"
+binding = "ASSETS"
+not_found_handling = "none"
+
+[vars]
+HF_ENV = "production"
+APP_SLUG = "777-liquor-website"
+
+# ── OPT-IN INFRA (for local `wrangler dev` or self-provisioned resources) ──
+# Declare the infra you want in app.manifest.json (db / r2 / kv / durableObject),
+# create it in your Cloudflare account, then uncomment the matching block with
+# the real IDs (e.g. `wrangler d1 list`, `wrangler r2 bucket list`).
+#
+# D1 — app.manifest.json "db": true → env.DB. ONE database shared by preview +
+# prod (HF_ENV splits CODE, not DATA — a destructive preview migration hits
+# prod data). Schema in migrations/000N_*.sql (keep changes additive).
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "777-liquor-website-db"
+# database_id = "00000000-0000-0000-0000-000000000000"
+#
+# R2 — app.manifest.json "r2": true → env.STORAGE.
+# [[r2_buckets]]
+# binding = "STORAGE"
+# bucket_name = "777-liquor-website-assets"
+#
+# KV — app.manifest.json "kv": true → env.KV. ONE namespace shared by preview +
+# prod. Eventually consistent (NOT Redis): fine for config + cached reads,
+# NOT for counters/locks/read-after-write (use a Durable Object there).
+# [[kv_namespaces]]
+# binding = "KV"
+# id = "00000000000000000000000000000000"
