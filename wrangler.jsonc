@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+
+  // Root-level deploy config for Cloudflare Workers Builds.
+  // Paths are relative to this file (the repository root). The actual app
+  // source lives in 777-Liquor-Website/website/ — `npm run build` from the
+  // root installs and builds it there, producing the outputs referenced below.
+  "name": "777-liquor-website",
+  "main": "./777-Liquor-Website/website/dist/server/server.js",
+  "compatibility_date": "2025-05-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": { "enabled": true },
+  "assets": {
+    "directory": "./777-Liquor-Website/website/dist/client",
+    "binding": "ASSETS",
+    "not_found_handling": "none"
+  },
+  "vars": {
+    "HF_ENV": "prod",
+    "APP_SLUG": "777-liquor-website"
+  }
+}
