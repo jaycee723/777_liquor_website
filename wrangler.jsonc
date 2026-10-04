@@ -9,6 +9,9 @@
   "main": "./777-Liquor-Website/website/dist/server/server.js",
   "compatibility_date": "2025-05-01",
   "compatibility_flags": ["nodejs_compat"],
+  // Preserve dashboard-managed plaintext variables such as KEG_EMAIL_FROM.
+  // API keys must be Worker secrets, never values in this file.
+  "keep_vars": true,
   "observability": { "enabled": true },
   "assets": {
     "directory": "./777-Liquor-Website/website/dist/client",
@@ -17,6 +20,7 @@
   },
   "vars": {
     "HF_ENV": "prod",
-    "APP_SLUG": "777-liquor-website"
+    "APP_SLUG": "777-liquor-website",
+    "KEG_ALLOWED_HOSTNAMES": "777liquor.com,www.777liquor.com"
   }
 }

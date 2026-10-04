@@ -1,5 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
+import { KegRequestForm } from '../components/KegRequestForm'
 
 export const Route = createFileRoute('/')({ component: Home })
 
@@ -45,8 +46,6 @@ const popularBrands = [{name:'Heineken',category:'IMPORT BEER',logo:'/logos/777-
 
 function Home() {
   const [showKeg, setShowKeg] = useState(false)
-  const [submitted, setSubmitted] = useState(false)
-  const [selectedKegBrand, setSelectedKegBrand] = useState('')
   useEffect(() => { const root=document.querySelector('.brand-slider'); if(!root)return; const slides=Array.from(root.querySelectorAll('.brand-slide')); let current=0; const show=(i:number)=>{current=(i+slides.length)%slides.length; slides.forEach((x,n)=>x.classList.toggle('active',n===current))}; const timer=setInterval(()=>show(current+1),4200); root.querySelector('.next')?.addEventListener('click',()=>show(current+1)); root.querySelector('.prev')?.addEventListener('click',()=>show(current-1)); return()=>clearInterval(timer) }, [])
 
   return <main>
@@ -75,7 +74,7 @@ function Home() {
 
     <section id="visit" className="visit"><p className="eyebrow">777 LIQUOR • HONOLULU, HAWAIʻI</p><h2>Come see what's<br/><span>new.</span></h2><p>We keep the lineup relevant, rotating, and worth checking in person. Stop by and see what just hit the shelves.</p><a className="button light" href="#top">Back to top ↑</a></section>
 
-    {showKeg && <div className="modal-backdrop" onClick={() => setShowKeg(false)}><div className="modal" onClick={e => e.stopPropagation()}><button className="close" onClick={() => setShowKeg(false)}>×</button><p className="eyebrow">KEG PRE-ORDER</p><h2>Tell us what you need.</h2>{submitted ? <div className="success"><strong>Request received.</strong><p>We’ll use your request to confirm brand availability, pickup day, and pricing. Keg cost must be paid in advance to secure the order.</p><button className="button" onClick={() => setShowKeg(false)}>Close</button></div> : <form onSubmit={e => {e.preventDefault();setSubmitted(true)}}><label>Name<input required placeholder="Your name"/></label><label>Phone<input required type="tel" placeholder="(808) 555-0123"/></label><label>Brand<select required value={selectedKegBrand} onChange={e => setSelectedKegBrand(e.target.value)}><option value="">Select a brand</option>{kegBrands.map(x=><option key={x.name} value={x.name}>{x.name}</option>)}</select></label><label>Pickup day<select required value={kegBrands.find(x => x.name === selectedKegBrand)?.day || ''} disabled={!selectedKegBrand} aria-label="Pickup day determined by brand"><option value="">Select a brand first</option><option value="Wednesday">Wednesday morning</option><option value="Friday">Friday morning</option></select><small className="field-note">Pickup day is automatically determined by the brand selected. Wednesday = Wednesday-scheduled brands; Friday = Friday-scheduled brands.</small></label><label>Notes<textarea placeholder="Size, quantity, event date, or questions"/></label><p className="fine">Kegs are pickup only. Keg cost is due in advance. Pump rental is optional and charged separately; rented pumps must be returned. Pickup availability is subject to brand schedule.</p><button className="button" type="submit">Submit pre-order request →</button></form>}</div></div>}
+    {showKeg && <div className="modal-backdrop" onClick={() => setShowKeg(false)}><div className="modal" onClick={e => e.stopPropagation()}><button className="close" onClick={() => setShowKeg(false)}>×</button><p className="eyebrow">KEG PRE-ORDER</p><h2>Tell us what you need.</h2><KegRequestForm brands={kegBrands} siteKey={import.meta.env.VITE_TURNSTILE_SITE_KEY || ''} onClose={() => setShowKeg(false)} /></div></div>}
     <footer><span>© 777 LIQUOR</span><span>HONOLULU • HAWAIʻI</span><span>21+ • DRINK RESPONSIBLY</span></footer>
   </main>
 }
