@@ -11,13 +11,23 @@ OK_EXT = {"svg", "png", "jpg", "jpeg", "webp"}
 CT_EXT = {"image/svg+xml": "svg", "image/png": "png", "image/jpeg": "jpg", "image/webp": "webp"}
 os.makedirs(OUT, exist_ok=True)
 
+def get_json(params, retries=3):
+    for attempt in range(retries):
+        try:
+            resp = requests.get(API, headers=HDR, params=params, timeout=30)
+            resp.raise_for_status()
+            return resp.json()
+        except (requests.RequestException, ValueError):
+            if attempt == retries - 1:
+                return {}
+            time.sleep(1)
+
 def find(brand):
     key = re.sub(r"[^a-z0-9]", "", brand.split()[0].lower())
     for ftype in ("drawing", "bitmap"):
-        r = requests.get(API, headers=HDR, params={
+        r = get_json({
             "action": "query", "generator": "search", "gsrnamespace": 6, "gsrlimit": 8,
-            "gsrsearch": f"{brand} logo filetype:{ftype}", "prop": "imageinfo",
-            "iiprop": "url|mime|extmetadata", "format": "json"}, timeout=30).json()
+            "gsrsearch": f"{brand} logo filetype:{ftype}", "prop": "imageinfo", "iiprop": "url|mime|extmetadata", "format": "json"})
         pages = sorted(r.get("query", {}).get("pages", {}).values(), key=lambda p: p.get("index", 99))
         for p in pages:
             title = re.sub(r"[^a-z0-9]", "", p["title"].lower())
