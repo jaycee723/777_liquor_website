@@ -1,0 +1,81 @@
+category,brand,target_file
+Beer,Heineken,heineken.svg
+Beer,Modelo,modelo.svg
+Beer,Coors,coors.svg
+Beer,Budweiser,budweiser.svg
+Beer,Bud Light,bud-light.svg
+Beer,Michelob Ultra,michelob-ultra.svg
+Beer,Corona,corona.svg
+Beer,Miller,miller.svg
+Beer,Kirin,kirin.svg
+Beer,Stella Artois,stella-artois.svg
+Beer,Sierra Nevada,sierra-nevada.svg
+Beer,Lagunitas,lagunitas.svg
+Beer,Sapporo,sapporo.svg
+Beer,Hallasan,hallasan.svg
+Beer,Estrella,estrella.svg
+Beer,Deschutes,deschutes.svg
+Beer,Pacifico,pacifico.svg
+Beer,Busch,busch.svg
+Beer,Pabst,pabst.svg
+Beer,Tsingtao,tsingtao.svg
+Beer,Rogue,rogue.svg
+Beer,Firestone Walker,firestone-walker.svg
+Beer,Elysian,elysian.svg
+Beer,Mickey's,mickeys.svg
+Beer,Montucky Cold Snacks,montucky-cold-snacks.svg
+Beer,Moosehead,moosehead.svg
+Beer,Paulaner,paulaner.svg
+Beer,Founders,founders.svg
+Beer,Kona Brewing,kona-brewing.svg
+Beer,Maui Brewing,maui-brewing.svg
+Beer,Voodoo Ranger,voodoo-ranger.svg
+Beer,Steel Reserve,steel-reserve.svg
+Beer,Lite,lite.svg
+Beer,Topo Chico,topo-chico.svg
+Beer,Blue Moon,blue-moon.svg
+RTD,Buzzballz,buzzballz.svg
+RTD,Mike's Hard Lemonade,mikes-hard-lemonade.svg
+RTD,Twisted Tea,twisted-tea.svg
+RTD,Cutwater,cutwater.svg
+RTD,Truly,truly.svg
+RTD,Beatbox,beatbox.svg
+RTD,High Noon,high-noon.svg
+RTD,White Claw,white-claw.svg
+RTD,Nutrl,nutrl.svg
+RTD,Smirnoff Ice,smirnoff-ice.svg
+RTD,Surfside,surfside.svg
+RTD,Happy Dad,happy-dad.svg
+RTD,Monaco,monaco.svg
+RTD,Clubtails,clubtails.svg
+RTD,On the Rocks,on-the-rocks.svg
+RTD,Black Fly,black-fly.svg
+Spirits,Jack Daniel's,jack-daniels.svg
+Spirits,Crown Royal,crown-royal.svg
+Spirits,Malibu,malibu.svg
+Spirits,Casamigos,casamigos.svg
+Spirits,Teremana,teremana.svg
+Spirits,Tito's,titos.svg
+Spirits,1800 Tequila,1800-tequila.svg
+Spirits,Absolut,absolut.svg
+Spirits,Jose Cuervo,jose-cuervo.svg
+Spirits,Karkov,karkov.svg
+Spirits,Baileys,baileys.svg
+Spirits,Hennessy,hennessy.svg
+Spirits,Jameson,jameson.svg
+Spirits,Cazadores,cazadores.svg
+Spirits,Corazon,corazon.svg
+Spirits,Camarena,camarena.svg
+Spirits,Lunazul,lunazul.svg
+Spirits,Jagermeister,jagermeister.svg
+Spirits,Bacardi,bacardi.svg
+Spirits,Effen,effen.svg
+Spirits,Goldschlager,goldschlager.svg
+Spirits,Herradura,herradura.svg
+Spirits,Weller,weller.svg
+Spirits,Dusse,dusse.svg
+Spirits,RumChata,rumchata.svg
+Spirits,Suntory,suntory.svg
+Spirits,Kahlua,kahlua.svg
+Spirits,Fireball,fireball.svg
+Spirits,Captain Morgan,captain-morgan.svg
