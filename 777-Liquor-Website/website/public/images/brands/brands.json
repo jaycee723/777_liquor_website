@@ -62,7 +62,7 @@
    "brand": "Michelob Ultra",
    "category": "Beer",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "stella-artois",
@@ -104,7 +104,7 @@
    "brand": "Miller Lite",
    "category": "Beer",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "sierra-nevada",
@@ -216,7 +216,7 @@
    "brand": "Deschutes",
    "category": "Beer",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "hurricane",
@@ -237,7 +237,7 @@
    "brand": "Pabst Blue Ribbon",
    "category": "Beer",
    "logo": null,
-   "status": "missing"
+   "status": "review"
   },
   {
    "slug": "fresh-haze",
@@ -286,7 +286,7 @@
    "brand": "Tsingtao",
    "category": "Beer",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "asahi",
@@ -370,7 +370,7 @@
    "brand": "Moosehead",
    "category": "Beer",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "natural-ice",
@@ -398,7 +398,7 @@
    "brand": "Amstel",
    "category": "Beer",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "ballast-point",
@@ -454,7 +454,7 @@
    "brand": "Dogfish Head",
    "category": "Beer",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "hamms",
@@ -475,13 +475,13 @@
    "brand": "Hite",
    "category": "Beer",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "keystone",
    "brand": "Keystone",
    "category": "Beer",
-   "logo": "/images/brands/keystone.svg",
+   "logo": "/images/brands/keystone.png",
    "status": "ok"
   },
   {
@@ -495,7 +495,7 @@
    "slug": "lone-star",
    "brand": "Lone Star",
    "category": "Beer",
-   "logo": "/images/brands/lone-star.svg",
+   "logo": "/images/brands/lone-star.jpg",
    "status": "ok"
   },
   {
@@ -510,14 +510,14 @@
    "brand": "New Belgium",
    "category": "Beer",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "newcastle",
    "brand": "Newcastle",
    "category": "Beer",
-   "logo": "/images/brands/newcastle.webp",
-   "status": "ok"
+   "logo": null,
+   "status": "missing"
   },
   {
    "slug": "old-milwaukee",
@@ -1056,14 +1056,14 @@
    "brand": "Press",
    "category": "RTD",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "ranch-water",
    "brand": "Ranch Water",
    "category": "RTD",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "seagrams-escapes",
@@ -1133,13 +1133,13 @@
    "brand": "New Amsterdam",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "malibu",
    "brand": "Malibu",
    "category": "Spirits",
-   "logo": "/images/brands/malibu.svg",
+   "logo": "/images/brands/malibu.png",
    "status": "ok"
   },
   {
@@ -1147,7 +1147,7 @@
    "brand": "Tito's",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "casamigos",
@@ -1168,7 +1168,7 @@
    "brand": "Smirnoff",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "1800-tequila",
@@ -1287,7 +1287,7 @@
    "brand": "Bacardi",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "colonel-e-h-taylor",
@@ -1301,7 +1301,7 @@
    "brand": "Don Julio",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "dusse",
@@ -1329,7 +1329,7 @@
    "brand": "Fireball",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "fleischmanns",
@@ -1343,7 +1343,7 @@
    "brand": "George T. Stagg",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "goldschlager",
@@ -1385,7 +1385,7 @@
    "brand": "Lunazul",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "rumchata",
@@ -1405,8 +1405,8 @@
    "slug": "sheep-dog",
    "brand": "Sheep Dog",
    "category": "Spirits",
-   "logo": "/images/brands/sheep-dog.jpg",
-   "status": "ok"
+   "logo": null,
+   "status": "missing"
   },
   {
    "slug": "skrewball",
@@ -1476,7 +1476,7 @@
    "brand": "Beefeater",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "belvedere",
@@ -1490,7 +1490,7 @@
    "brand": "Blanton's",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "bombay-sapphire",
@@ -1504,7 +1504,7 @@
    "brand": "Buffalo Trace",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "bulleit",
@@ -1539,14 +1539,14 @@
    "brand": "Chambord",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "chivas-regal",
    "brand": "Chivas Regal",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "chum-churum",
@@ -1602,7 +1602,7 @@
    "brand": "Disaronno",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "don-q",
@@ -1630,7 +1630,7 @@
    "brand": "Elijah Craig",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "espolon",
@@ -1644,7 +1644,7 @@
    "brand": "Evan Williams",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "four-roses",
@@ -1679,7 +1679,7 @@
    "brand": "Grand Marnier",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "hakutsuru",
@@ -1700,7 +1700,7 @@
    "brand": "Havana Club",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "hawaiian-vintage-chocolate",
@@ -1735,7 +1735,7 @@
    "brand": "Hpnotiq",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "jim-beam",
@@ -1770,7 +1770,7 @@
    "brand": "Knob Creek",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "koloa-rum",
@@ -1819,14 +1819,14 @@
    "brand": "Mount Gay",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "nikka",
    "brand": "Nikka",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "ocean-vodka",
@@ -1840,7 +1840,7 @@
    "brand": "Old Forester",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "ozeki",
@@ -1903,7 +1903,7 @@
    "brand": "Southern Comfort",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "suntory",
@@ -1931,14 +1931,14 @@
    "brand": "Woodford Reserve",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "yamazaki",
    "brand": "Yamazaki",
    "category": "Spirits",
-   "logo": "/images/brands/yamazaki.svg",
-   "status": "ok"
+   "logo": null,
+   "status": "missing"
   },
   {
    "slug": "barefoot",
@@ -1979,7 +1979,7 @@
    "slug": "the-prisoner",
    "brand": "The Prisoner",
    "category": "Wine",
-   "logo": "/images/brands/the-prisoner.svg",
+   "logo": "/images/brands/the-prisoner.jpg",
    "status": "ok"
   },
   {
@@ -2134,7 +2134,7 @@
    "brand": "Robert Mondavi",
    "category": "Wine",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "the-velvet-devil",
@@ -2148,7 +2148,7 @@
    "brand": "Wente",
    "category": "Wine",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "bogle",
@@ -2183,7 +2183,7 @@
    "brand": "Cloudy Bay",
    "category": "Wine",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "cooks",
@@ -2217,8 +2217,8 @@
    "slug": "korbel",
    "brand": "Korbel",
    "category": "Wine",
-   "logo": "/images/brands/korbel.png",
-   "status": "ok"
+   "logo": null,
+   "status": "missing"
   },
   {
    "slug": "la-crema",
@@ -2231,8 +2231,8 @@
    "slug": "layer-cake",
    "brand": "Layer Cake",
    "category": "Wine",
-   "logo": "/images/brands/layer-cake.png",
-   "status": "ok"
+   "logo": null,
+   "status": "missing"
   },
   {
    "slug": "menage-a-trois",
