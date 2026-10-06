@@ -2,10 +2,10 @@ import { HOURS, STORE } from "../lib/store-info";
 
 /** Visible name/address/phone/hours block (matches the Google Business Profile and the JSON-LD). */
 export function StoreInfo() {
-  const link = { color: "inherit", textDecoration: "underline" } as const;
+  const link = { color: "#ffffff", textDecoration: "underline" } as const;
   return (
-    <address className="store-info" style={{ fontStyle: "normal", marginTop: 24, lineHeight: 1.7 }}>
-      <strong>{STORE.name}</strong>
+    <address className="store-info" style={{ fontStyle: "normal", marginTop: 24, lineHeight: 1.7, color: "#d1e3df" }}>
+      <strong style={{ color: "#ffffff" }}>{STORE.name}</strong>
       <br />
       {STORE.address.street}
       <br />

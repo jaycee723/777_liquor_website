@@ -22,10 +22,12 @@ export function BrandLogo({ brand, size = 64, className }: BrandLogoProps) {
   }, [brand]);
 
   const next = () => setI((n) => Math.min(n + 1, sources.length - 1));
+  const source = sources[i] || PLACEHOLDER_LOGO;
+  if (source === PLACEHOLDER_LOGO || source.endsWith("/placeholder.svg")) return null;
 
   return (
     <img
-      src={sources[i]}
+      src={source}
       alt={`${brand} logo`}
       width={size}
       height={size}
@@ -34,7 +36,13 @@ export function BrandLogo({ brand, size = 64, className }: BrandLogoProps) {
       onError={next}
       onLoad={(e) => {
         // Brandfetch returns a tiny generic image for unknown domains; treat it as a miss.
-        if (sources[i].includes("cdn.brandfetch.io") && e.currentTarget.naturalWidth <= 64) next();
+        let isBrandfetch = false;
+        try {
+          isBrandfetch = new URL(source, window.location.origin).hostname === "cdn.brandfetch.io";
+        } catch {
+          isBrandfetch = false;
+        }
+        if (isBrandfetch && e.currentTarget.naturalWidth <= 64) next();
       }}
     />
   );

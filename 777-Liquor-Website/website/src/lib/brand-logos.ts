@@ -22,15 +22,25 @@ export const PLACEHOLDER_LOGO = "/images/placeholder.svg";
 const BRANDFETCH_CLIENT_ID = "1idQH8jO7RrKajunQnH";
 
 let indexPromise: Promise<BrandIndex> | null = null;
+const BRAND_SLUG_ALIASES: Record<string, string> = {
+  "corona-extra": "corona",
+  "modelo-especial": "modelo",
+  "titos-handmade-vodka": "titos",
+  "suntory-196": "196-suntory",
+  "monaco-cocktails": "monaco",
+};
 
 export function brandSlug(name: string): string {
-  return name
+  const slug = name
     .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
     .replace(/[\u2019']/g, "")
     .replace(/&/g, " and ")
     .replace(/[^a-z0-9]+/g, " ")
     .trim()
     .replace(/\s+/g, "-");
+  return BRAND_SLUG_ALIASES[slug] ?? slug;
 }
 
 export function brandfetchUrl(domain: string): string {
