@@ -77,7 +77,7 @@ function Home() {
 
   return <main className={'store-refresh' + (motionPaused ? ' motion-paused' : '')}>
     <a className="skip-link" href="#top">Skip to content</a>
-    <header className="nav"><a className="logo" href="#top">777<span>LIQUOR</span></a><nav aria-label="Main navigation"><a href="#trending">Selection</a><a href="#beer">Brands</a><a href="#kegs">Kegs</a><a href="#visit">Visit</a></nav><a className="nav-cta" href="#kegs">Keg inquiries</a></header>
+    <header className="nav"><a className="logo" href="#top" aria-label="777 Liquor home"><img src="/brands/Generated%20image.webp" width="85" height="52" alt="" decoding="async" /><span>LIQUOR</span></a><nav aria-label="Main navigation"><a href="#trending">Selection</a><a href="#beer">Brands</a><a href="#kegs">Kegs</a><a href="#visit">Visit</a></nav><a className="nav-cta" href="#kegs">Keg inquiries</a></header>
 
     <section id="top" tabIndex={-1} className="hero">
       <div className="hero-copy">
