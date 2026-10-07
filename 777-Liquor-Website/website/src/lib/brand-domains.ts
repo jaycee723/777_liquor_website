@@ -57,6 +57,8 @@ export const BRAND_DOMAINS: Record<string, string> = {
   "nutrl": "nutrl.com",
   "on-the-rocks": "ontherockscocktails.com",
   "surfside": "drinksurfside.com",
+  "monaco": "monacococktails.com",
+  "196-suntory": "suntory.com",
   "angry-orchard": "angryorchard.com",
   "cayman-jack": "caymanjack.com",
   "june-shine": "juneshine.com",
