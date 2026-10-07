@@ -1,0 +1,17 @@
+# Wrong-entity logos renamed in the first audit (not the brands' logos)
+black-box-corporation.svg
+budweiser-budvar.svg
+busch-gardens.svg
+guinness-six-nations.png
+keystone-ncaa.svg
+korbel-school-university-of-denver.png
+layer-cake-film-2004.png
+lone-star-conference.svg
+mahou-sensei-negima.svg
+malibu-shores-tv.svg
+mickeys-very-merry-christmas-party.svg
+newcastle-red-bulls.webp
+sapporo-kani-honke.svg
+sheep-dog-n-wolf.jpg
+the-prisoner-tv-series.svg
+yamazaki-biscuits.svg

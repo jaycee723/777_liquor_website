@@ -24,6 +24,7 @@ on:
       - scripts/run_fetch.py
       - scripts/apply_logo_fixes.py
       - scripts/logo_fixes.csv
+      - scripts/logo_deletes.txt
       - .github/workflows/fetch-logos.yml
 
 concurrency:
@@ -48,8 +49,8 @@ jobs:
 
       - run: pip install -r scripts/requirements.txt
 
-      - name: Apply logo fixes (rename mislabeled files)
-        run: python scripts/apply_logo_fixes.py scripts/logo_fixes.csv
+      - name: Apply logo fixes (rename and delete wrong files)
+        run: python scripts/apply_logo_fixes.py scripts/logo_fixes.csv scripts/logo_deletes.txt
 
       - name: Fetch logos
         env:
