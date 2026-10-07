@@ -1,81 +1,327 @@
-category,brand,target_file
-Beer,Heineken,heineken.svg
-Beer,Modelo,modelo.svg
-Beer,Coors,coors.svg
-Beer,Budweiser,budweiser.svg
-Beer,Bud Light,bud-light.svg
-Beer,Michelob Ultra,michelob-ultra.svg
-Beer,Corona,corona.svg
-Beer,Miller,miller.svg
-Beer,Kirin,kirin.svg
-Beer,Stella Artois,stella-artois.svg
-Beer,Sierra Nevada,sierra-nevada.svg
-Beer,Lagunitas,lagunitas.svg
-Beer,Sapporo,sapporo.svg
-Beer,Hallasan,hallasan.svg
-Beer,Estrella,estrella.svg
-Beer,Deschutes,deschutes.svg
-Beer,Pacifico,pacifico.svg
-Beer,Busch,busch.svg
-Beer,Pabst,pabst.svg
-Beer,Tsingtao,tsingtao.svg
-Beer,Rogue,rogue.svg
-Beer,Firestone Walker,firestone-walker.svg
-Beer,Elysian,elysian.svg
-Beer,Mickey's,mickeys.svg
-Beer,Montucky Cold Snacks,montucky-cold-snacks.svg
-Beer,Moosehead,moosehead.svg
-Beer,Paulaner,paulaner.svg
-Beer,Founders,founders.svg
-Beer,Kona Brewing,kona-brewing.svg
-Beer,Maui Brewing,maui-brewing.svg
-Beer,Voodoo Ranger,voodoo-ranger.svg
-Beer,Steel Reserve,steel-reserve.svg
-Beer,Lite,lite.svg
-Beer,Topo Chico,topo-chico.svg
-Beer,Blue Moon,blue-moon.svg
-RTD,Buzzballz,buzzballz.svg
-RTD,Mike's Hard Lemonade,mikes-hard-lemonade.svg
-RTD,Twisted Tea,twisted-tea.svg
-RTD,Cutwater,cutwater.svg
-RTD,Truly,truly.svg
-RTD,Beatbox,beatbox.svg
-RTD,High Noon,high-noon.svg
-RTD,White Claw,white-claw.svg
-RTD,Nutrl,nutrl.svg
-RTD,Smirnoff Ice,smirnoff-ice.svg
-RTD,Surfside,surfside.svg
-RTD,Happy Dad,happy-dad.svg
-RTD,Monaco,monaco.svg
-RTD,Clubtails,clubtails.svg
-RTD,On the Rocks,on-the-rocks.svg
-RTD,Black Fly,black-fly.svg
-Spirits,Jack Daniel's,jack-daniels.svg
-Spirits,Crown Royal,crown-royal.svg
-Spirits,Malibu,malibu.svg
-Spirits,Casamigos,casamigos.svg
-Spirits,Teremana,teremana.svg
-Spirits,Tito's,titos.svg
-Spirits,1800 Tequila,1800-tequila.svg
-Spirits,Absolut,absolut.svg
-Spirits,Jose Cuervo,jose-cuervo.svg
-Spirits,Karkov,karkov.svg
-Spirits,Baileys,baileys.svg
-Spirits,Hennessy,hennessy.svg
-Spirits,Jameson,jameson.svg
-Spirits,Cazadores,cazadores.svg
-Spirits,Corazon,corazon.svg
-Spirits,Camarena,camarena.svg
-Spirits,Lunazul,lunazul.svg
-Spirits,Jagermeister,jagermeister.svg
-Spirits,Bacardi,bacardi.svg
-Spirits,Effen,effen.svg
-Spirits,Goldschlager,goldschlager.svg
-Spirits,Herradura,herradura.svg
-Spirits,Weller,weller.svg
-Spirits,Dusse,dusse.svg
-Spirits,RumChata,rumchata.svg
-Spirits,Suntory,suntory.svg
-Spirits,Kahlua,kahlua.svg
-Spirits,Fireball,fireball.svg
-Spirits,Captain Morgan,captain-morgan.svg
+category,brand,aliases,target_file,inventory_items
+Beer,Heineken,,heineken.svg,22
+Beer,Maui Brewing,maui,maui-brewing.svg,22
+Beer,Kona Brewing,kona,kona-brewing.svg,21
+Beer,Modelo,negra modelo;modelo especial,modelo.svg,18
+Beer,Bud Light,,bud-light.svg,13
+Beer,Voodoo Ranger,voodoo,voodoo-ranger.svg,13
+Beer,Budweiser,bud;bud ice,budweiser.svg,12
+Beer,Corona,corona extra;corona premier;corona light,corona.svg,12
+Beer,Michelob Ultra,michelob,michelob-ultra.svg,12
+Beer,Stella Artois,stella;stela;stela artois,stella-artois.svg,9
+Beer,Aloha Beer,aloha,aloha-beer.svg,8
+Beer,Coors Light,,coors-light.svg,8
+Beer,Lagunitas,,lagunitas.svg,8
+Beer,Mickey's,mickey;mickeys malt,mickeys.svg,7
+Beer,Miller Lite,lite,miller-lite.svg,7
+Beer,Sierra Nevada,,sierra-nevada.svg,7
+Beer,Kirin,kirin ichiban,kirin.svg,6
+Beer,Steel Reserve,steel,steel-reserve.svg,6
+Beer,Coors,coors banquet,coors.svg,5
+Beer,Goose Island,goose,goose-island.svg,5
+Beer,Hallasan,,hallasan.svg,5
+Beer,Honolulu Beerworks,honolulu,honolulu-beerworks.svg,5
+Beer,Pacifico,pacific fico;pacifico clara,pacifico.svg,5
+Beer,Sapporo,sapporo premium,sapporo.svg,5
+Beer,Elysian,,elysian.svg,4
+Beer,Estrella Jalisco,estrella,estrella-jalisco.svg,4
+Beer,Gold Cliff,,gold-cliff.svg,4
+Beer,10 Barrel,10 barrels,10-barrel.svg,3
+Beer,Blue Moon,,blue-moon.svg,3
+Beer,Busch,busch light,busch.svg,3
+Beer,Deschutes,,deschutes.svg,3
+Beer,Hurricane,,hurricane.svg,3
+Beer,Mind Haze,,mind-haze.svg,3
+Beer,Pabst Blue Ribbon,pabst;pbr,pabst-blue-ribbon.svg,3
+Beer,Fresh Haze,,fresh-haze.svg,2
+Beer,Kua Bay,,kua-bay.svg,2
+Beer,Miller High Life,miller,miller-high-life.svg,2
+Beer,Natural Light,natty,natural-light.svg,2
+Beer,Rogue,,rogue.svg,2
+Beer,Rolling Rock,,rolling-rock.svg,2
+Beer,Tsingtao,,tsingtao.svg,2
+Beer,Asahi,,asahi.svg,1
+Beer,Athletic Brewing,athletic,athletic-brewing.svg,1
+Beer,Big Wave,,big-wave.svg,1
+Beer,Coronado,,coronado.svg,1
+Beer,Dos Equis,,dos-equis.svg,1
+Beer,Firestone Walker,firestone,firestone-walker.svg,1
+Beer,Founders,,founders.svg,1
+Beer,Guinness,,guinness.svg,1
+Beer,Hazy Bear Hug,,hazy-bear-hug.svg,1
+Beer,Longboard,long board,longboard.svg,1
+Beer,Montucky Cold Snacks,montucky,montucky-cold-snacks.svg,1
+Beer,Moosehead,,moosehead.svg,1
+Beer,Natural Ice,,natural-ice.svg,1
+Beer,Paulaner,,paulaner.svg,1
+Beer,Steinlager,,steinlager.svg,1
+Beer,Amstel,,amstel.svg,0
+Beer,Ballast Point,,ballast-point.svg,0
+Beer,Becks,,becks.svg,0
+Beer,Bells,,bells.svg,0
+Beer,Brooklyn Brewery,,brooklyn-brewery.svg,0
+Beer,Carlsberg,,carlsberg.svg,0
+Beer,Cass,,cass.svg,0
+Beer,Colt 45,,colt-45.svg,0
+Beer,Dogfish Head,dogfish,dogfish-head.svg,0
+Beer,Hamms,,hamms.svg,0
+Beer,Hawaiian Hop,,hawaiian-hop.svg,0
+Beer,Hite,,hite.svg,0
+Beer,Keystone,,keystone.svg,0
+Beer,Lanikai Brewing,,lanikai-brewing.svg,0
+Beer,Lone Star,,lone-star.svg,0
+Beer,Mahou,,mahou.svg,0
+Beer,New Belgium,fat tire,new-belgium.svg,0
+Beer,Newcastle,,newcastle.svg,0
+Beer,Old Milwaukee,,old-milwaukee.svg,0
+Beer,Olympia,,olympia.svg,0
+Beer,Orion,,orion.svg,0
+Beer,Peroni,,peroni.svg,0
+Beer,Presidente,,presidente.svg,0
+Beer,Red Stripe,,red-stripe.svg,0
+Beer,Samuel Adams,sam adams,samuel-adams.svg,0
+Beer,Schlitz,,schlitz.svg,0
+Beer,Shock Top,,shock-top.svg,0
+Beer,Singha,,singha.svg,0
+Beer,Stone Brewing,stone,stone-brewing.svg,0
+Beer,Tecate,,tecate.svg,0
+Beer,Tiger,,tiger.svg,0
+Beer,Topo Chico,,topo-chico.svg,0
+Beer,Victoria,,victoria.svg,0
+Beer,Yuengling,,yuengling.svg,0
+RTD,Buzzballz,buzz ballz;buzz balls;buzzball;buzzballs,buzzballz.svg,25
+RTD,High Noon,,high-noon.svg,23
+RTD,Mike's Hard Lemonade,mikes hard;mikes harder;mike harder;mikes;mike s;mike,mikes-hard-lemonade.svg,20
+RTD,White Claw,,white-claw.svg,20
+RTD,Beatbox,,beatbox.svg,12
+RTD,Twisted Tea,twisted,twisted-tea.svg,12
+RTD,Cutwater,,cutwater.svg,11
+RTD,Smirnoff Ice,,smirnoff-ice.svg,11
+RTD,Four Loko,,four-loko.svg,9
+RTD,Nectar,,nectar.svg,7
+RTD,-196 Suntory,196;suntory 196,196-suntory.svg,6
+RTD,The Beast,,the-beast.svg,6
+RTD,Truly,,truly.svg,6
+RTD,Arizona Hard,arizona,arizona-hard.svg,5
+RTD,VMC,,vmc.svg,5
+RTD,Happy Dad,,happy-dad.svg,4
+RTD,Nutrl,,nutrl.svg,4
+RTD,On the Rocks,,on-the-rocks.svg,4
+RTD,Surfside,,surfside.svg,4
+RTD,Beach Juice,,beach-juice.svg,3
+RTD,Hyoketsu,,hyoketsu.svg,3
+RTD,Monaco,,monaco.svg,3
+RTD,Summer Club,,summer-club.svg,3
+RTD,Angry Orchard,,angry-orchard.svg,2
+RTD,Atomic Boss,,atomic-boss.svg,2
+RTD,Cayman Jack,cayman,cayman-jack.svg,2
+RTD,Clubtails,,clubtails.svg,2
+RTD,MD 20/20,md 20 20,md-20-20.svg,2
+RTD,Monster Beast Hard,,monster-beast-hard.svg,2
+RTD,Paradise Ciders,,paradise-ciders.svg,2
+RTD,Simply Spiked,,simply-spiked.svg,2
+RTD,The Club,,the-club.svg,2
+RTD,Arnold Palmer Spiked,arnold palmer,arnold-palmer-spiked.svg,1
+RTD,Blind Lemonade,,blind-lemonade.svg,1
+RTD,Calypso,,calypso.svg,1
+RTD,Foger,,foger.svg,1
+RTD,Fruit Smash,,fruit-smash.svg,1
+RTD,June Shine,,june-shine.svg,1
+RTD,Lanikai Shave Ice,,lanikai-shave-ice.svg,1
+RTD,MXD Drinks,mxd,mxd-drinks.svg,1
+RTD,Minute Maid Spiked,,minute-maid-spiked.svg,1
+RTD,Mountain Dew Hard,,mountain-dew-hard.svg,1
+RTD,Ole Tequila,,ole-tequila.svg,1
+RTD,Partybomb,,partybomb.svg,1
+RTD,Rancho La Gloria,,rancho-la-gloria.svg,1
+RTD,Redd's,redds,redds.svg,1
+RTD,Sun Cruiser,,sun-cruiser.svg,1
+RTD,Topo Chico Hard Seltzer,,topo-chico-hard-seltzer.svg,1
+RTD,Yoju,,yoju.svg,1
+RTD,You Soju,,you-soju.svg,1
+RTD,Austin Eastciders,,austin-eastciders.svg,0
+RTD,Bartles and Jaymes,,bartles-and-jaymes.svg,0
+RTD,Black Fly,,black-fly.svg,0
+RTD,Bud Light Seltzer,,bud-light-seltzer.svg,0
+RTD,Corona Hard Seltzer,,corona-hard-seltzer.svg,0
+RTD,Henrys Hard Soda,henrys,henrys-hard-soda.svg,0
+RTD,Jim Beam Highball,,jim-beam-highball.svg,0
+RTD,Michelob Ultra Seltzer,,michelob-ultra-seltzer.svg,0
+RTD,Not Your Fathers,,not-your-fathers.svg,0
+RTD,Onda,,onda.svg,0
+RTD,Press,,press.svg,0
+RTD,Ranch Water,,ranch-water.svg,0
+RTD,Seagrams Escapes,,seagrams-escapes.svg,0
+RTD,Skinnygirl,skinny girl,skinnygirl.svg,0
+RTD,Spindrift Spiked,,spindrift-spiked.svg,0
+RTD,Strongbow,,strongbow.svg,0
+RTD,Vizzy,,vizzy.svg,0
+RTD,Wild Basin,,wild-basin.svg,0
+Spirits,Jack Daniel's,jack daniel;jack,jack-daniels.svg,24
+Spirits,99 Bananas,99,99-bananas.svg,20
+Spirits,Crown Royal,crown,crown-royal.svg,15
+Spirits,New Amsterdam,,new-amsterdam.svg,15
+Spirits,Malibu,,malibu.svg,13
+Spirits,Tito's,tito,titos.svg,11
+Spirits,Casamigos,,casamigos.svg,10
+Spirits,Teremana,,teremana.svg,10
+Spirits,Smirnoff,,smirnoff.svg,9
+Spirits,1800 Tequila,1800,1800-tequila.svg,7
+Spirits,Absolut,absolute,absolut.svg,6
+Spirits,Hennessy,hennesey,hennessy.svg,5
+Spirits,Jose Cuervo,cuervo,jose-cuervo.svg,5
+Spirits,Baileys,,baileys.svg,4
+Spirits,Karkov,,karkov.svg,4
+Spirits,Jameson,,jameson.svg,3
+Spirits,Camarena,,camarena.svg,2
+Spirits,Cazadores,,cazadores.svg,2
+Spirits,Corazon,,corazon.svg,2
+Spirits,G4 Tequila,g4,g4-tequila.svg,2
+Spirits,Gran Coramino,,gran-coramino.svg,2
+Spirits,Grey Goose,,grey-goose.svg,2
+Spirits,Wheatley,wheatly,wheatley.svg,2
+Spirits,XXL,,xxl.svg,2
+Spirits,AO Suntory,ao santory,ao-suntory.svg,1
+Spirits,Bacardi,,bacardi.svg,1
+Spirits,Colonel E.H. Taylor,,colonel-e-h-taylor.svg,1
+Spirits,Don Julio,,don-julio.svg,1
+Spirits,Dusse,,dusse.svg,1
+Spirits,Effen,,effen.svg,1
+Spirits,Elmer T. Lee,,elmer-t-lee.svg,1
+Spirits,Fireball,,fireball.svg,1
+Spirits,Fleischmann's,fleischmann,fleischmanns.svg,1
+Spirits,George T. Stagg,,george-t-stagg.svg,1
+Spirits,Goldschlager,,goldschlager.svg,1
+Spirits,Herradura,,herradura.svg,1
+Spirits,Ichiko,,ichiko.svg,1
+Spirits,Jagermeister,jager,jagermeister.svg,1
+Spirits,Kahlua,,kahlua.svg,1
+Spirits,Lunazul,,lunazul.svg,1
+Spirits,RumChata,,rumchata.svg,1
+Spirits,Sailor Jerry,,sailor-jerry.svg,1
+Spirits,Sheep Dog,,sheep-dog.svg,1
+Spirits,Skrewball,screwball,skrewball.svg,1
+Spirits,Still Gin,,still-gin.svg,1
+Spirits,Sugarlands,,sugarlands.svg,1
+Spirits,Svedka,,svedka.svg,1
+Spirits,Weller,,weller.svg,1
+Spirits,Whip Shots,,whip-shots.svg,1
+Spirits,Aperol,,aperol.svg,0
+Spirits,Avion,,avion.svg,0
+Spirits,Basil Hayden,,basil-hayden.svg,0
+Spirits,Beefeater,,beefeater.svg,0
+Spirits,Belvedere,,belvedere.svg,0
+Spirits,Blanton's,,blantons.svg,0
+Spirits,Bombay Sapphire,,bombay-sapphire.svg,0
+Spirits,Buffalo Trace,,buffalo-trace.svg,0
+Spirits,Bulleit,,bulleit.svg,0
+Spirits,Campari,,campari.svg,0
+Spirits,Canadian Club,,canadian-club.svg,0
+Spirits,Captain Morgan,,captain-morgan.svg,0
+Spirits,Chambord,,chambord.svg,0
+Spirits,Chivas Regal,,chivas-regal.svg,0
+Spirits,Chum Churum,,chum-churum.svg,0
+Spirits,Ciroc,,ciroc.svg,0
+Spirits,Clase Azul,,clase-azul.svg,0
+Spirits,Cointreau,,cointreau.svg,0
+Spirits,Courvoisier,,courvoisier.svg,0
+Spirits,Deep Eddy,,deep-eddy.svg,0
+Spirits,Dewar's,,dewars.svg,0
+Spirits,Disaronno,,disaronno.svg,0
+Spirits,Don Q,,don-q.svg,0
+Spirits,Eagle Rare,,eagle-rare.svg,0
+Spirits,El Jimador,,el-jimador.svg,0
+Spirits,Elijah Craig,,elijah-craig.svg,0
+Spirits,Espolon,,espolon.svg,0
+Spirits,Evan Williams,,evan-williams.svg,0
+Spirits,Four Roses,,four-roses.svg,0
+Spirits,Gekkeikan,,gekkeikan.svg,0
+Spirits,Glenfiddich,,glenfiddich.svg,0
+Spirits,Glenlivet,,glenlivet.svg,0
+Spirits,Grand Marnier,,grand-marnier.svg,0
+Spirits,Hakutsuru,,hakutsuru.svg,0
+Spirits,Hangar 1,,hangar-1.svg,0
+Spirits,Havana Club,,havana-club.svg,0
+Spirits,Hawaiian Vintage Chocolate,hawaiian vintage,hawaiian-vintage-chocolate.svg,0
+Spirits,Hendrick's,,hendricks.svg,0
+Spirits,Hibiki,,hibiki.svg,0
+Spirits,Hornitos,,hornitos.svg,0
+Spirits,Hpnotiq,,hpnotiq.svg,0
+Spirits,Jim Beam,,jim-beam.svg,0
+Spirits,Jinro,,jinro.svg,0
+Spirits,Johnnie Walker,,johnnie-walker.svg,0
+Spirits,Ketel One,,ketel-one.svg,0
+Spirits,Knob Creek,,knob-creek.svg,0
+Spirits,Koloa Rum,koloa,koloa-rum.svg,0
+Spirits,Kraken,,kraken.svg,0
+Spirits,Macallan,,macallan.svg,0
+Spirits,Maker's Mark,,makers-mark.svg,0
+Spirits,Martell,,martell.svg,0
+Spirits,Milagro,,milagro.svg,0
+Spirits,Mount Gay,,mount-gay.svg,0
+Spirits,Nikka,,nikka.svg,0
+Spirits,Ocean Vodka,,ocean-vodka.svg,0
+Spirits,Old Forester,,old-forester.svg,0
+Spirits,Ozeki,,ozeki.svg,0
+Spirits,Patron,,patron.svg,0
+Spirits,Pendleton,,pendleton.svg,0
+Spirits,Pinnacle,,pinnacle.svg,0
+Spirits,Remy Martin,,remy-martin.svg,0
+Spirits,Sauza,,sauza.svg,0
+Spirits,Seagram's 7,,seagrams-7.svg,0
+Spirits,Sho Chiku Bai,,sho-chiku-bai.svg,0
+Spirits,Southern Comfort,,southern-comfort.svg,0
+Spirits,Suntory,,suntory.svg,0
+Spirits,Tanqueray,,tanqueray.svg,0
+Spirits,Wild Turkey,,wild-turkey.svg,0
+Spirits,Woodford Reserve,,woodford-reserve.svg,0
+Spirits,Yamazaki,,yamazaki.svg,0
+Wine,Barefoot,,barefoot.svg,28
+Wine,Dark Horse,,dark-horse.svg,5
+Wine,Sutter Home,,sutter-home.svg,5
+Wine,19 Crimes,,19-crimes.svg,4
+Wine,Black Box,blackbox,black-box.svg,3
+Wine,The Prisoner,prisoner,the-prisoner.svg,3
+Wine,Cupcake,,cupcake.svg,2
+Wine,Decoy,,decoy.svg,2
+Wine,Joel Gott,,joel-gott.svg,2
+Wine,LaMarca,,lamarca.svg,2
+Wine,Ruffino,,ruffino.svg,2
+Wine,Woodbridge,,woodbridge.svg,2
+Wine,Apothic,,apothic.svg,1
+Wine,Avaline,,avaline.svg,1
+Wine,CK Mondavi,,ck-mondavi.svg,1
+Wine,Clay Shannon,,clay-shannon.svg,1
+Wine,Harken,,harken.svg,1
+Wine,Josh Cellars,josh,josh-cellars.svg,1
+Wine,Kendall-Jackson,kendall jackson,kendall-jackson.svg,1
+Wine,Magnolia Grove,,magnolia-grove.svg,1
+Wine,Matua,,matua.svg,1
+Wine,Meiomi,,meiomi.svg,1
+Wine,Mer Soleil,,mer-soleil.svg,1
+Wine,Mezzacorona,,mezzacorona.svg,1
+Wine,Oyster Bay,,oyster-bay.svg,1
+Wine,Postmark,,postmark.svg,1
+Wine,Risata,,risata.svg,1
+Wine,Robert Mondavi,vint robert mondavi,robert-mondavi.svg,1
+Wine,The Velvet Devil,velvet devil,the-velvet-devil.svg,1
+Wine,Wente,,wente.svg,1
+Wine,Bogle,,bogle.svg,0
+Wine,Bota Box,,bota-box.svg,0
+Wine,Caymus,,caymus.svg,0
+Wine,Chateau Ste Michelle,,chateau-ste-michelle.svg,0
+Wine,Cloudy Bay,,cloudy-bay.svg,0
+Wine,Cooks,,cooks.svg,0
+Wine,Duckhorn,,duckhorn.svg,0
+Wine,Franzia,,franzia.svg,0
+Wine,Kim Crawford,,kim-crawford.svg,0
+Wine,Korbel,,korbel.svg,0
+Wine,La Crema,,la-crema.svg,0
+Wine,Layer Cake,,layer-cake.svg,0
+Wine,Menage a Trois,,menage-a-trois.svg,0
+Wine,Mionetto,,mionetto.svg,0
+Wine,Moet and Chandon,moet,moet-and-chandon.svg,0
+Wine,Santa Margherita,,santa-margherita.svg,0
+Wine,Troublemaker,,troublemaker.svg,0
+Wine,Veuve Clicquot,,veuve-clicquot.svg,0
+Wine,Yellow Tail,,yellow-tail.svg,0

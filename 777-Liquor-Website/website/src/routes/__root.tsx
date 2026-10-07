@@ -13,6 +13,7 @@ import { NotFound } from "@higgsfield/quanta/not-found";
 
 import appCss from "../styles.css?url";
 import { reportHiggsfieldError } from "../lib/higgsfield-error-reporting";
+import { SEO_DESCRIPTION, SEO_TITLE, STORE, localBusinessJsonLd } from "../lib/store-info";
 // Page metadata (browser <title>/favicon + social og: tags) committed into the
 // repo by the marketplace meta API and read at BUILD time — no runtime fetch.
 // Editing it via the app settings UI rewrites this file and redeploys the app.
@@ -20,9 +21,8 @@ import appMetaJson from "../app-meta.json";
 
 declare const __HF_DESIGN_INSPECTOR__: boolean;
 
-// Built-in defaults for any field that isn't set in app-meta.json.
-const DEFAULT_TITLE = "Higgsfield App";
-const DEFAULT_DESCRIPTION = "Higgsfield Generated Project";
+// Optional Google Analytics 4 (set VITE_GA_MEASUREMENT_ID, e.g. G-XXXXXXXXXX, at build time).
+const GA_ID = (import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined) || "";
 
 type AppMeta = {
   og_title?: string | null;
@@ -34,12 +34,6 @@ type AppMeta = {
 
 const appMeta = appMetaJson as AppMeta;
 
-// Build the document head (title / description / og: / twitter: / favicon) from
-// app-meta.json, falling back to the defaults above for any unset field.
-// og_title/og_description double as the browser <title> and meta description;
-// og_image_url (when set) also drives the twitter card + image. Built from
-// inline tag literals (conditional spreads for the optional image/favicon) so
-// it matches the head() shape TanStack expects.
 // favicon/og images live in THIS app's own /assets, so the host is never
 // inherent. app-meta.json may carry an absolute higgsfield-app URL with a STALE
 // host — baked from the app this one was copied/remixed/renamed from — which would
@@ -64,9 +58,11 @@ function toOwnAssetUrl(value: string | null | undefined): string | null {
   }
 }
 
+// Build the document head. Title/description are set for local SEO (store name,
+// category and city); the og image/favicon still come from app-meta.json.
 function buildHead(meta: AppMeta) {
-  const title = meta.og_title ?? DEFAULT_TITLE;
-  const description = meta.og_description ?? DEFAULT_DESCRIPTION;
+  const title = SEO_TITLE;
+  const description = SEO_DESCRIPTION;
   const ogImage = toOwnAssetUrl(meta.og_image_url);
   const favicon = toOwnAssetUrl(meta.favicon_url);
   const ogVideo = toOwnAssetUrl(meta.og_video_url);
@@ -77,12 +73,17 @@ function buildHead(meta: AppMeta) {
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title },
       { name: "description", content: description },
-      { name: "author", content: "Higgsfield" },
+      { name: "author", content: STORE.shortName },
+      { name: "robots", content: "index,follow,max-image-preview:large" },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: STORE.url },
+      { property: "og:site_name", content: STORE.name },
+      { property: "og:locale", content: "en_US" },
       { name: "twitter:card", content: ogImage ? "summary_large_image" : "summary" },
-      { name: "twitter:site", content: "@Higgsfield" },
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
       ...(ogImage
         ? [
             { property: "og:image", content: ogImage },
@@ -95,7 +96,19 @@ function buildHead(meta: AppMeta) {
     ],
     links: [
       { rel: "stylesheet", href: appCss },
+      { rel: "canonical", href: STORE.url + "/" },
       ...(favicon ? [{ rel: "icon", href: favicon }] : []),
+    ],
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(localBusinessJsonLd(ogImage)) },
+      ...(GA_ID
+        ? [
+            { src: `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`, async: true },
+            {
+              children: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`,
+            },
+          ]
+        : []),
     ],
   };
 }
