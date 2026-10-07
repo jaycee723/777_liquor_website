@@ -1,0 +1,98 @@
+# One-time cleanup: deletes the mislabeled logo files listed in scripts/logo_fixes.csv
+# (the "new_file" column). Run it from the Actions tab. With dry_run = true (the default)
+# it only LISTS what it would remove. Safe to delete this workflow after the cleanup.
+name: Remove mislabeled logos
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "true = list only, false = delete and commit"
+        type: choice
+        default: "true"
+        options:
+          - "true"
+          - "false"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: remove-mislabeled-logos
+  cancel-in-progress: false
+
+jobs:
+  remove:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select and remove files
+        id: select
+        env:
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          python3 - <<'PY'
+          import csv, os, pathlib, subprocess, sys
+
+          dry = os.environ.get("DRY_RUN", "true").strip().lower() != "false"
+          root = pathlib.Path("777-Liquor-Website/website/public/images/brands")
+          csv_path = pathlib.Path("scripts/logo_fixes.csv")
+          if not csv_path.is_file():
+              sys.exit("scripts/logo_fixes.csv not found")
+
+          index_file = root / "brands.json"
+          index = index_file.read_text(encoding="utf-8") if index_file.is_file() else ""
+
+          names = []
+          with csv_path.open(newline="", encoding="utf-8") as handle:
+              for row in csv.reader(handle):
+                  if len(row) < 2:
+                      continue
+                  name = row[1].strip()
+                  if name and name != "new_file":
+                      names.append(name)
+
+          remove, in_use, missing, unsafe = [], [], [], []
+          for name in dict.fromkeys(names):
+              if "/" in name or "\\" in name or name.startswith("."):
+                  unsafe.append(name)
+              elif not (root / name).is_file():
+                  missing.append(name)
+              elif name in index:
+                  in_use.append(name)
+              else:
+                  remove.append(name)
+
+          if len(remove) > 60:
+              sys.exit(f"Refusing to delete {len(remove)} files (limit is 60). Check scripts/logo_fixes.csv.")
+
+          if not dry:
+              for name in remove:
+                  subprocess.run(["git", "rm", "-q", "--", str(root / name)], check=True)
+
+          title = "DRY RUN - nothing deleted" if dry else "Deleted"
+          lines = [f"### Mislabeled logo cleanup ({title})", ""]
+          lines += [f"- {'would remove' if dry else 'removed'}: `{n}`" for n in remove]
+          lines += [f"- kept (still referenced in brands.json): `{n}`" for n in in_use]
+          lines += [f"- already gone: `{n}`" for n in missing]
+          lines += [f"- ignored (unsafe name): `{n}`" for n in unsafe]
+          lines += ["", f"Total {'to remove' if dry else 'removed'}: {len(remove)}"]
+          text = "\n".join(lines)
+          print(text)
+          summary = os.environ.get("GITHUB_STEP_SUMMARY")
+          if summary:
+              with open(summary, "a", encoding="utf-8") as out:
+                  out.write(text + "\n")
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
+              out.write(f"count={len(remove)}\n")
+          PY
+
+      - name: Commit and push
+        if: ${{ inputs.dry_run == 'false' && steps.select.outputs.count != '0' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: remove mislabeled logo files listed in scripts/logo_fixes.csv"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
