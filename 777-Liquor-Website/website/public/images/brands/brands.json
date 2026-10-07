@@ -96,8 +96,8 @@
    "slug": "mickeys",
    "brand": "Mickey's",
    "category": "Beer",
-   "logo": "/images/brands/mickeys.svg",
-   "status": "ok"
+   "logo": null,
+   "status": "missing"
   },
   {
    "slug": "miller-lite",
@@ -208,8 +208,8 @@
    "slug": "busch",
    "brand": "Busch",
    "category": "Beer",
-   "logo": "/images/brands/busch.svg",
-   "status": "ok"
+   "logo": null,
+   "status": "missing"
   },
   {
    "slug": "deschutes",
@@ -223,7 +223,7 @@
    "brand": "Hurricane",
    "category": "Beer",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "mind-haze",
@@ -440,7 +440,7 @@
    "brand": "Cass",
    "category": "Beer",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "colt-45",
@@ -481,8 +481,8 @@
    "slug": "keystone",
    "brand": "Keystone",
    "category": "Beer",
-   "logo": "/images/brands/keystone.png",
-   "status": "ok"
+   "logo": null,
+   "status": "missing"
   },
   {
    "slug": "lanikai-brewing",
@@ -495,8 +495,8 @@
    "slug": "lone-star",
    "brand": "Lone Star",
    "category": "Beer",
-   "logo": "/images/brands/lone-star.jpg",
-   "status": "ok"
+   "logo": null,
+   "status": "missing"
   },
   {
    "slug": "mahou",
@@ -531,7 +531,7 @@
    "brand": "Olympia",
    "category": "Beer",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "orion",
@@ -545,7 +545,7 @@
    "brand": "Peroni",
    "category": "Beer",
    "logo": null,
-   "status": "missing"
+   "status": "review"
   },
   {
    "slug": "presidente",
@@ -699,7 +699,7 @@
    "brand": "Nectar",
    "category": "RTD",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "196-suntory",
@@ -783,7 +783,7 @@
    "brand": "Monaco",
    "category": "RTD",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "summer-club",
@@ -874,7 +874,7 @@
    "brand": "Calypso",
    "category": "RTD",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "foger",
@@ -1049,7 +1049,7 @@
    "brand": "Onda",
    "category": "RTD",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "press",
@@ -1139,8 +1139,8 @@
    "slug": "malibu",
    "brand": "Malibu",
    "category": "Spirits",
-   "logo": "/images/brands/malibu.png",
-   "status": "ok"
+   "logo": null,
+   "status": "review"
   },
   {
    "slug": "titos",
@@ -1273,7 +1273,7 @@
    "brand": "XXL",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "ao-suntory",
@@ -1462,7 +1462,7 @@
    "brand": "Avion",
    "category": "Spirits",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "basil-hayden",
@@ -1972,15 +1972,15 @@
    "slug": "black-box",
    "brand": "Black Box",
    "category": "Wine",
-   "logo": "/images/brands/black-box.svg",
-   "status": "ok"
+   "logo": null,
+   "status": "missing"
   },
   {
    "slug": "the-prisoner",
    "brand": "The Prisoner",
    "category": "Wine",
-   "logo": "/images/brands/the-prisoner.jpg",
-   "status": "ok"
+   "logo": null,
+   "status": "missing"
   },
   {
    "slug": "cupcake",
@@ -2057,7 +2057,7 @@
    "brand": "Harken",
    "category": "Wine",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "josh-cellars",
@@ -2190,7 +2190,7 @@
    "brand": "Cooks",
    "category": "Wine",
    "logo": null,
-   "status": "review"
+   "status": "missing"
   },
   {
    "slug": "duckhorn",
