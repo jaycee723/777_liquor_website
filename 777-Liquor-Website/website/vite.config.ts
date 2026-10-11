@@ -1,10 +1,6 @@
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
-import {
-  higgsfieldDesignInspectorVitePlugin,
-  higgsfieldDesignSourceBabelPlugin,
-} from "./src/module/design-inspector/vite";
 import svgr from "vite-plugin-svgr";
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
@@ -20,7 +16,6 @@ const QUANTA_ICONS_SHIM = fileURLToPath(
 );
 
 export default defineConfig(({ mode }) => {
-  const designInspectorEnabled = process.env.HF_DESIGN_INSPECTOR === "1" || mode === "design";
 
   return {
     resolve: {
@@ -74,12 +69,7 @@ export default defineConfig(({ mode }) => {
       tanstackStart({
         server: { entry: "server" },
       }),
-      higgsfieldDesignInspectorVitePlugin(designInspectorEnabled),
-      react({
-        babel: {
-          plugins: designInspectorEnabled ? [higgsfieldDesignSourceBabelPlugin] : [],
-        },
-      }),
+      react(),
       tailwindcss(),
       tsconfigPaths(),
     ],

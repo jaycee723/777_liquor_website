@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { PLACEHOLDER_LOGO, getBrandLogoSources } from "../lib/brand-logos";
+import { PLACEHOLDER_LOGO, getBrandLogoSources, getDarkBackdropLogos } from "../lib/brand-logos";
 
 type BrandLogoProps = { brand: string; size?: number; className?: string };
 
@@ -7,9 +7,13 @@ type BrandLogoProps = { brand: string; size?: number; className?: string };
 export function BrandLogo({ brand, size = 64, className }: BrandLogoProps) {
   const [sources, setSources] = useState<string[]>([PLACEHOLDER_LOGO]);
   const [i, setI] = useState(0);
+  const [darkSet, setDarkSet] = useState<Set<string>>(() => new Set());
 
   useEffect(() => {
     let live = true;
+    getDarkBackdropLogos().then((d) => {
+      if (live) setDarkSet(d);
+    });
     getBrandLogoSources(brand).then((s) => {
       if (live) {
         setSources(s);
@@ -32,7 +36,10 @@ export function BrandLogo({ brand, size = 64, className }: BrandLogoProps) {
       width={size}
       height={size}
       loading="lazy"
-      className={className}
+      className={
+        [className, darkSet.has(source) ? "logo-on-dark" : ""].filter(Boolean).join(" ") ||
+        undefined
+      }
       onError={next}
       onLoad={(e) => {
         // Brandfetch returns a tiny generic image for unknown domains; treat it as a miss.

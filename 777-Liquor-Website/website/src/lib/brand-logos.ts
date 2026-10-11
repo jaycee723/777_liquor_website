@@ -13,6 +13,8 @@ export type BrandLogoEntry = {
   category: string;
   logo: string | null;
   status: string;
+  /** Light (white-on-transparent) logo that needs a dark backdrop to be visible. */
+  onDark?: boolean;
 };
 
 type BrandIndex = { fallback: string; brands: BrandLogoEntry[] };
@@ -78,4 +80,10 @@ export async function getBrandLogoSources(brand: string): Promise<string[]> {
 /** Returns the first (best) logo URL, or the placeholder when nothing is known. */
 export async function getBrandLogo(brand: string): Promise<string> {
   return (await getBrandLogoSources(brand))[0];
+}
+
+/** Local logo URLs that are light-on-transparent and need a dark backdrop. */
+export async function getDarkBackdropLogos(): Promise<Set<string>> {
+  const index = await loadIndex();
+  return new Set(index.brands.filter((b) => b.onDark && b.logo).map((b) => b.logo as string));
 }

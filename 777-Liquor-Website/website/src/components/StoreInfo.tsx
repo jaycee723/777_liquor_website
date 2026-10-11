@@ -20,7 +20,10 @@ function trackContact(event: "phone_click" | "directions_click") {
 export function StoreInfo() {
   const link = { color: "#ffffff", textDecoration: "underline" } as const;
   return (
-    <address className="store-info" style={{ fontStyle: "normal", marginTop: 24, lineHeight: 1.7, color: "#d1e3df" }}>
+    <address
+      className="store-info"
+      style={{ fontStyle: "normal", marginTop: 24, lineHeight: 1.7, color: "#d1e3df" }}
+    >
       <strong style={{ color: "#ffffff" }}>{STORE.name}</strong>
       <br />
       {STORE.address.street}
@@ -31,7 +34,13 @@ export function StoreInfo() {
         {STORE.telephoneDisplay}
       </a>
       {" · "}
-      <a href={STORE.mapsUrl} target="_blank" rel="noopener noreferrer" style={link} onClick={() => trackContact("directions_click")}>
+      <a
+        href={STORE.mapsUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={link}
+        onClick={() => trackContact("directions_click")}
+      >
         Get directions
       </a>
       <ul style={{ listStyle: "none", padding: 0, margin: "12px 0 0" }}>

@@ -104,7 +104,8 @@
    "brand": "Miller Lite",
    "category": "Beer",
    "logo": "/images/brands/miller-lite.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "sierra-nevada",
@@ -174,7 +175,8 @@
    "brand": "Elysian",
    "category": "Beer",
    "logo": "/images/brands/elysian.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "estrella-jalisco",
@@ -216,7 +218,8 @@
    "brand": "Deschutes",
    "category": "Beer",
    "logo": "/images/brands/deschutes.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "hurricane",
@@ -272,7 +275,8 @@
    "brand": "Rogue",
    "category": "Beer",
    "logo": "/images/brands/rogue.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "rolling-rock",
@@ -307,14 +311,16 @@
    "brand": "Big Wave",
    "category": "Beer",
    "logo": "/images/brands/big-wave.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "coronado",
    "brand": "Coronado",
    "category": "Beer",
    "logo": "/images/brands/coronado.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "dos-equis",
@@ -405,7 +411,8 @@
    "brand": "Ballast Point",
    "category": "Beer",
    "logo": "/images/brands/ballast-point.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "becks",
@@ -524,7 +531,8 @@
    "brand": "Old Milwaukee",
    "category": "Beer",
    "logo": "/images/brands/old-milwaukee.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "olympia",
@@ -594,14 +602,16 @@
    "brand": "Stone Brewing",
    "category": "Beer",
    "logo": "/images/brands/stone-brewing.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "tecate",
    "brand": "Tecate",
    "category": "Beer",
    "logo": "/images/brands/tecate.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "tiger",
@@ -622,7 +632,8 @@
    "brand": "Victoria",
    "category": "Beer",
    "logo": "/images/brands/victoria.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "yuengling",
@@ -699,7 +710,8 @@
    "brand": "Nectar",
    "category": "RTD",
    "logo": "/images/brands/nectar.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "196-suntory",
@@ -720,7 +732,8 @@
    "brand": "Truly",
    "category": "RTD",
    "logo": "/images/brands/truly.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "arizona-hard",
@@ -825,7 +838,8 @@
    "brand": "MD 20/20",
    "category": "RTD",
    "logo": "/images/brands/md-20-20.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "monster-beast-hard",
@@ -881,7 +895,8 @@
    "brand": "Foger",
    "category": "RTD",
    "logo": "/images/brands/foger.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "fruit-smash",
@@ -951,7 +966,8 @@
    "brand": "Redd's",
    "category": "RTD",
    "logo": "/images/brands/redds.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "sun-cruiser",
@@ -965,7 +981,8 @@
    "brand": "Topo Chico Hard Seltzer",
    "category": "RTD",
    "logo": "/images/brands/topo-chico-hard-seltzer.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "yoju",
@@ -1021,7 +1038,8 @@
    "brand": "Henrys Hard Soda",
    "category": "RTD",
    "logo": "/images/brands/henrys-hard-soda.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "jim-beam-highball",
@@ -1105,7 +1123,8 @@
    "brand": "Wild Basin",
    "category": "RTD",
    "logo": "/images/brands/wild-basin.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "jack-daniels",
@@ -1175,7 +1194,8 @@
    "brand": "1800 Tequila",
    "category": "Spirits",
    "logo": "/images/brands/1800-tequila.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "absolut",
@@ -1224,21 +1244,24 @@
    "brand": "Camarena",
    "category": "Spirits",
    "logo": "/images/brands/camarena.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "cazadores",
    "brand": "Cazadores",
    "category": "Spirits",
    "logo": "/images/brands/cazadores.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "corazon",
    "brand": "Corazon",
    "category": "Spirits",
    "logo": "/images/brands/corazon.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "g4-tequila",
@@ -1252,7 +1275,8 @@
    "brand": "Gran Coramino",
    "category": "Spirits",
    "logo": "/images/brands/gran-coramino.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "grey-goose",
@@ -1273,7 +1297,8 @@
    "brand": "XXL",
    "category": "Spirits",
    "logo": "/images/brands/xxl.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "ao-suntory",
@@ -1301,7 +1326,8 @@
    "brand": "Don Julio",
    "category": "Spirits",
    "logo": "/images/brands/don-julio.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "dusse",
@@ -1357,7 +1383,8 @@
    "brand": "Herradura",
    "category": "Spirits",
    "logo": "/images/brands/herradura.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "ichiko",
@@ -1392,7 +1419,8 @@
    "brand": "RumChata",
    "category": "Spirits",
    "logo": "/images/brands/rumchata.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "sailor-jerry",
@@ -1434,7 +1462,8 @@
    "brand": "Svedka",
    "category": "Spirits",
    "logo": "/images/brands/svedka.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "weller",
@@ -1448,7 +1477,8 @@
    "brand": "Whip Shots",
    "category": "Spirits",
    "logo": "/images/brands/whip-shots.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "aperol",
@@ -1490,14 +1520,16 @@
    "brand": "Blanton's",
    "category": "Spirits",
    "logo": "/images/brands/blantons.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "bombay-sapphire",
    "brand": "Bombay Sapphire",
    "category": "Spirits",
    "logo": "/images/brands/bombay-sapphire.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "buffalo-trace",
@@ -1574,14 +1606,16 @@
    "brand": "Cointreau",
    "category": "Spirits",
    "logo": "/images/brands/cointreau.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "courvoisier",
    "brand": "Courvoisier",
    "category": "Spirits",
    "logo": "/images/brands/courvoisier.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "deep-eddy",
@@ -1644,7 +1678,8 @@
    "brand": "Evan Williams",
    "category": "Spirits",
    "logo": "/images/brands/evan-williams.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "four-roses",
@@ -1679,14 +1714,16 @@
    "brand": "Grand Marnier",
    "category": "Spirits",
    "logo": "/images/brands/grand-marnier.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "hakutsuru",
    "brand": "Hakutsuru",
    "category": "Spirits",
    "logo": "/images/brands/hakutsuru.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "hangar-1",
@@ -1784,7 +1821,8 @@
    "brand": "Kraken",
    "category": "Spirits",
    "logo": "/images/brands/kraken.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "macallan",
@@ -1819,7 +1857,8 @@
    "brand": "Mount Gay",
    "category": "Spirits",
    "logo": "/images/brands/mount-gay.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "nikka",
@@ -1875,7 +1914,8 @@
    "brand": "Remy Martin",
    "category": "Spirits",
    "logo": "/images/brands/remy-martin.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "sauza",
@@ -1973,21 +2013,24 @@
    "brand": "Black Box",
    "category": "Wine",
    "logo": "/images/brands/black-box.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "the-prisoner",
    "brand": "The Prisoner",
    "category": "Wine",
    "logo": "/images/brands/the-prisoner.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "cupcake",
    "brand": "Cupcake",
    "category": "Wine",
    "logo": "/images/brands/cupcake.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "decoy",
@@ -2015,7 +2058,8 @@
    "brand": "Ruffino",
    "category": "Wine",
    "logo": "/images/brands/ruffino.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "woodbridge",
@@ -2071,7 +2115,8 @@
    "brand": "Kendall-Jackson",
    "category": "Wine",
    "logo": "/images/brands/kendall-jackson.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "magnolia-grove",
@@ -2085,14 +2130,16 @@
    "brand": "Matua",
    "category": "Wine",
    "logo": "/images/brands/matua.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "meiomi",
    "brand": "Meiomi",
    "category": "Wine",
    "logo": "/images/brands/meiomi.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "mer-soleil",
@@ -2134,7 +2181,8 @@
    "brand": "Robert Mondavi",
    "category": "Wine",
    "logo": "/images/brands/robert-mondavi.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "the-velvet-devil",
@@ -2169,7 +2217,8 @@
    "brand": "Caymus",
    "category": "Wine",
    "logo": "/images/brands/caymus.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "chateau-ste-michelle",
@@ -2246,14 +2295,16 @@
    "brand": "Mionetto",
    "category": "Wine",
    "logo": "/images/brands/mionetto.png",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "moet-and-chandon",
    "brand": "Moet and Chandon",
    "category": "Wine",
    "logo": "/images/brands/moet-and-chandon.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "santa-margherita",
@@ -2274,7 +2325,8 @@
    "brand": "Veuve Clicquot",
    "category": "Wine",
    "logo": "/images/brands/veuve-clicquot.svg",
-   "status": "ok"
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "yellow-tail",
