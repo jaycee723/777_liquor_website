@@ -33,8 +33,9 @@
    "slug": "bud-light",
    "brand": "Bud Light",
    "category": "Beer",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/bud-light.png",
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "voodoo-ranger",
@@ -61,8 +62,9 @@
    "slug": "michelob-ultra",
    "brand": "Michelob Ultra",
    "category": "Beer",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/michelob-ultra.png",
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "stella-artois",
@@ -488,8 +490,8 @@
    "slug": "keystone",
    "brand": "Keystone",
    "category": "Beer",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/keystone.png",
+   "status": "ok"
   },
   {
    "slug": "lanikai-brewing",
@@ -624,8 +626,8 @@
    "slug": "topo-chico",
    "brand": "Topo Chico",
    "category": "Beer",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/topo-chico.png",
+   "status": "ok"
   },
   {
    "slug": "victoria",
@@ -674,8 +676,8 @@
    "slug": "beatbox",
    "brand": "Beatbox",
    "category": "RTD",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/beatbox.png",
+   "status": "ok"
   },
   {
    "slug": "twisted-tea",
@@ -702,8 +704,9 @@
    "slug": "four-loko",
    "brand": "Four Loko",
    "category": "RTD",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/four-loko.svg",
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "nectar",
@@ -740,7 +743,7 @@
    "brand": "Arizona Hard",
    "category": "RTD",
    "logo": null,
-   "status": "missing"
+   "status": "review"
   },
   {
    "slug": "vmc",
@@ -1094,8 +1097,8 @@
    "slug": "skinnygirl",
    "brand": "Skinnygirl",
    "category": "RTD",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/skinnygirl.png",
+   "status": "ok"
   },
   {
    "slug": "spindrift-spiked",
@@ -1108,8 +1111,8 @@
    "slug": "strongbow",
    "brand": "Strongbow",
    "category": "RTD",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/strongbow.png",
+   "status": "ok"
   },
   {
    "slug": "vizzy",
@@ -1186,8 +1189,8 @@
    "slug": "smirnoff",
    "brand": "Smirnoff",
    "category": "Spirits",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/smirnoff.png",
+   "status": "ok"
   },
   {
    "slug": "1800-tequila",
@@ -1208,8 +1211,8 @@
    "slug": "hennessy",
    "brand": "Hennessy",
    "category": "Spirits",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/hennessy.png",
+   "status": "ok"
   },
   {
    "slug": "jose-cuervo",
@@ -1404,8 +1407,8 @@
    "slug": "kahlua",
    "brand": "Kahlua",
    "category": "Spirits",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/kahlua.svg",
+   "status": "ok"
   },
   {
    "slug": "lunazul",
@@ -1426,8 +1429,8 @@
    "slug": "sailor-jerry",
    "brand": "Sailor Jerry",
    "category": "Spirits",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/sailor-jerry.png",
+   "status": "ok"
   },
   {
    "slug": "sheep-dog",
@@ -1440,8 +1443,9 @@
    "slug": "skrewball",
    "brand": "Skrewball",
    "category": "Spirits",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/skrewball.svg",
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "still-gin",
@@ -1505,8 +1509,8 @@
    "slug": "beefeater",
    "brand": "Beefeater",
    "category": "Spirits",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/beefeater.png",
+   "status": "ok"
   },
   {
    "slug": "belvedere",
@@ -1577,8 +1581,9 @@
    "slug": "chivas-regal",
    "brand": "Chivas Regal",
    "category": "Spirits",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/chivas-regal.png",
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "chum-churum",
@@ -1591,15 +1596,15 @@
    "slug": "ciroc",
    "brand": "Ciroc",
    "category": "Spirits",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/ciroc.png",
+   "status": "ok"
   },
   {
    "slug": "clase-azul",
    "brand": "Clase Azul",
    "category": "Spirits",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/clase-azul.png",
+   "status": "ok"
   },
   {
    "slug": "cointreau",
@@ -1628,15 +1633,15 @@
    "slug": "dewars",
    "brand": "Dewar's",
    "category": "Spirits",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/dewars.png",
+   "status": "ok"
   },
   {
    "slug": "disaronno",
    "brand": "Disaronno",
    "category": "Spirits",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/disaronno.svg",
+   "status": "ok"
   },
   {
    "slug": "don-q",
@@ -1663,8 +1668,9 @@
    "slug": "elijah-craig",
    "brand": "Elijah Craig",
    "category": "Spirits",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/elijah-craig.svg",
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "espolon",
@@ -1685,8 +1691,8 @@
    "slug": "four-roses",
    "brand": "Four Roses",
    "category": "Spirits",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/four-roses.svg",
+   "status": "ok"
   },
   {
    "slug": "gekkeikan",
@@ -1706,8 +1712,8 @@
    "slug": "glenlivet",
    "brand": "Glenlivet",
    "category": "Spirits",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/glenlivet.png",
+   "status": "ok"
   },
   {
    "slug": "grand-marnier",
@@ -1828,8 +1834,8 @@
    "slug": "macallan",
    "brand": "Macallan",
    "category": "Spirits",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/macallan.svg",
+   "status": "ok"
   },
   {
    "slug": "makers-mark",
@@ -1998,8 +2004,8 @@
    "slug": "sutter-home",
    "brand": "Sutter Home",
    "category": "Wine",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/sutter-home.png",
+   "status": "ok"
   },
   {
    "slug": "19-crimes",
@@ -2065,15 +2071,16 @@
    "slug": "woodbridge",
    "brand": "Woodbridge",
    "category": "Wine",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/woodbridge.svg",
+   "status": "ok",
+   "onDark": true
   },
   {
    "slug": "apothic",
    "brand": "Apothic",
    "category": "Wine",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/apothic.png",
+   "status": "ok"
   },
   {
    "slug": "avaline",
@@ -2238,8 +2245,8 @@
    "slug": "cooks",
    "brand": "Cooks",
    "category": "Wine",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/cooks.png",
+   "status": "ok"
   },
   {
    "slug": "duckhorn",
@@ -2266,8 +2273,8 @@
    "slug": "korbel",
    "brand": "Korbel",
    "category": "Wine",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/korbel.png",
+   "status": "ok"
   },
   {
    "slug": "la-crema",
@@ -2287,8 +2294,8 @@
    "slug": "menage-a-trois",
    "brand": "Menage a Trois",
    "category": "Wine",
-   "logo": null,
-   "status": "missing"
+   "logo": "/images/brands/menage-a-trois.png",
+   "status": "ok"
   },
   {
    "slug": "mionetto",
