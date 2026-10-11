@@ -131,7 +131,6 @@ function Home() {
 
   useEffect(() => {
     if (!showKeg) return;
-    openerRef.current = document.activeElement as HTMLElement | null;
     const onKey = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         setShowKeg(false);
@@ -401,7 +400,14 @@ function Home() {
             Tell us which brand you have in mind and we will follow up to confirm availability,
             pricing and pickup.
           </p>
-          <button type="button" className="button" onClick={() => setShowKeg(true)}>
+          <button
+            type="button"
+            className="button"
+            onClick={(e) => {
+              openerRef.current = e.currentTarget;
+              setShowKeg(true);
+            }}
+          >
             Send a keg inquiry <b>→</b>
           </button>
         </div>
