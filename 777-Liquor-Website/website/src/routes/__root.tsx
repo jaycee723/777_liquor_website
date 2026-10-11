@@ -97,7 +97,9 @@ function buildHead(meta: AppMeta) {
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "canonical", href: STORE.url + "/" },
-      ...(favicon ? [{ rel: "icon", href: favicon }] : []),
+      ...(favicon ? [{ rel: "icon", href: favicon, type: "image/png" }] : []),
+      { rel: "icon", href: "/favicon.ico", sizes: "any" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
     ],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(localBusinessJsonLd(ogImage)) },
