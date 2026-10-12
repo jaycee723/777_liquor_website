@@ -212,7 +212,7 @@
    "slug": "busch",
    "brand": "Busch",
    "category": "Beer",
-   "logo": "/images/brands/busch.png",
+   "logo": "/images/brands/busch.webp",
    "status": "ok"
   },
   {
@@ -349,7 +349,7 @@
    "slug": "guinness",
    "brand": "Guinness",
    "category": "Beer",
-   "logo": "/images/brands/guinness.png",
+   "logo": "/images/brands/guinness.webp",
    "status": "ok"
   },
   {
@@ -469,7 +469,7 @@
    "slug": "hamms",
    "brand": "Hamms",
    "category": "Beer",
-   "logo": "/images/brands/hamms.png",
+   "logo": "/images/brands/hamms.webp",
    "status": "ok"
   },
   {
@@ -669,7 +669,7 @@
    "slug": "white-claw",
    "brand": "White Claw",
    "category": "RTD",
-   "logo": "/images/brands/white-claw.png",
+   "logo": "/images/brands/white-claw.webp",
    "status": "ok"
   },
   {
@@ -683,7 +683,7 @@
    "slug": "twisted-tea",
    "brand": "Twisted Tea",
    "category": "RTD",
-   "logo": "/images/brands/twisted-tea.png",
+   "logo": "/images/brands/twisted-tea.webp",
    "status": "ok"
   },
   {
@@ -720,7 +720,7 @@
    "slug": "196-suntory",
    "brand": "-196 Suntory",
    "category": "RTD",
-   "logo": "/images/brands/196-suntory.svg",
+   "logo": "/images/brands/196-suntory.webp",
    "status": "ok"
   },
   {
@@ -777,7 +777,7 @@
    "slug": "surfside",
    "brand": "Surfside",
    "category": "RTD",
-   "logo": "/images/brands/surfside.png",
+   "logo": "/images/brands/surfside.webp",
    "status": "ok"
   },
   {
@@ -940,7 +940,7 @@
    "slug": "mountain-dew-hard",
    "brand": "Mountain Dew Hard",
    "category": "RTD",
-   "logo": "/images/brands/mountain-dew-hard.png",
+   "logo": "/images/brands/mountain-dew-hard.webp",
    "status": "ok"
   },
   {
@@ -954,7 +954,7 @@
    "slug": "partybomb",
    "brand": "Partybomb",
    "category": "RTD",
-   "logo": "/images/brands/partybomb.png",
+   "logo": "/images/brands/partybomb.webp",
    "status": "ok"
   },
   {
@@ -1040,7 +1040,7 @@
    "slug": "henrys-hard-soda",
    "brand": "Henrys Hard Soda",
    "category": "RTD",
-   "logo": "/images/brands/henrys-hard-soda.svg",
+   "logo": "/images/brands/henrys-hard-soda.webp",
    "status": "ok",
    "onDark": true
   },
@@ -1225,7 +1225,7 @@
    "slug": "baileys",
    "brand": "Baileys",
    "category": "Spirits",
-   "logo": "/images/brands/baileys.svg",
+   "logo": "/images/brands/baileys.webp",
    "status": "ok"
   },
   {
@@ -1502,7 +1502,7 @@
    "slug": "basil-hayden",
    "brand": "Basil Hayden",
    "category": "Spirits",
-   "logo": "/images/brands/basil-hayden.svg",
+   "logo": "/images/brands/basil-hayden.webp",
    "status": "ok"
   },
   {
@@ -1626,7 +1626,7 @@
    "slug": "deep-eddy",
    "brand": "Deep Eddy",
    "category": "Spirits",
-   "logo": "/images/brands/deep-eddy.png",
+   "logo": "/images/brands/deep-eddy.webp",
    "status": "ok"
   },
   {
@@ -1770,7 +1770,7 @@
    "slug": "hornitos",
    "brand": "Hornitos",
    "category": "Spirits",
-   "logo": "/images/brands/hornitos.svg",
+   "logo": "/images/brands/hornitos.webp",
    "status": "ok"
   },
   {
@@ -1862,7 +1862,7 @@
    "slug": "mount-gay",
    "brand": "Mount Gay",
    "category": "Spirits",
-   "logo": "/images/brands/mount-gay.svg",
+   "logo": "/images/brands/mount-gay.webp",
    "status": "ok",
    "onDark": true
   },
@@ -1934,7 +1934,7 @@
    "slug": "seagrams-7",
    "brand": "Seagram's 7",
    "category": "Spirits",
-   "logo": "/images/brands/seagrams-7.png",
+   "logo": "/images/brands/seagrams-7.webp",
    "status": "ok"
   },
   {
@@ -1969,7 +1969,7 @@
    "slug": "wild-turkey",
    "brand": "Wild Turkey",
    "category": "Spirits",
-   "logo": "/images/brands/wild-turkey.svg",
+   "logo": "/images/brands/wild-turkey.webp",
    "status": "ok"
   },
   {
@@ -2011,7 +2011,7 @@
    "slug": "19-crimes",
    "brand": "19 Crimes",
    "category": "Wine",
-   "logo": "/images/brands/19-crimes.png",
+   "logo": "/images/brands/19-crimes.webp",
    "status": "ok"
   },
   {
