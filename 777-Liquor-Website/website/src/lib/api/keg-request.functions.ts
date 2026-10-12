@@ -1,7 +1,16 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 
-const recipient = "777liquorstorehi@gmail.com";
+const DEFAULT_RECIPIENTS = ["777liquorstorehi@gmail.com", "justin@777liquor.com"];
+const SUBJECT_PREFIX = "[Keg Order]";
+
+function parseRecipients(value: string | undefined): string[] {
+  const list = (value ?? "")
+    .split(",")
+    .map((v) => v.trim())
+    .filter((v) => /^[^\s@<>,]+@[^\s@<>,]+\.[^\s@<>,]+$/.test(v));
+  return list.length ? list : DEFAULT_RECIPIENTS;
+}
 const pickupSchedule: Record<string, string> = {
   "Bud Light": "Wednesday",
   Budweiser: "Wednesday",
@@ -49,6 +58,7 @@ const schema = z.object({
 type EmailEnvironment = {
   RESEND_API_KEY?: string;
   KEG_EMAIL_FROM?: string;
+  KEG_EMAIL_TO?: string;
   TURNSTILE_SECRET_KEY?: string;
   KEG_ALLOWED_HOSTNAMES?: string;
 };
@@ -120,8 +130,8 @@ export const submitKegRequest = createServerFn({ method: "POST" })
         },
         body: JSON.stringify({
           from: config.KEG_EMAIL_FROM,
-          to: [recipient],
-          subject: "777 Liquor - new keg pre-order inquiry",
+          to: parseRecipients(config.KEG_EMAIL_TO),
+          subject: `${SUBJECT_PREFIX} 777 Liquor - new keg pre-order inquiry`,
           text: [
             "New keg pre-order inquiry from the website",
             `Request ID: ${data.requestId}`,
