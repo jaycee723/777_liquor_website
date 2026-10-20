@@ -19,8 +19,6 @@ import { SEO_DESCRIPTION, SEO_TITLE, STORE, localBusinessJsonLd } from "../lib/s
 // Editing it via the app settings UI rewrites this file and redeploys the app.
 import appMetaJson from "../app-meta.json";
 
-declare const __HF_DESIGN_INSPECTOR__: boolean;
-
 // Optional Google Analytics 4 (set VITE_GA_MEASUREMENT_ID, e.g. G-XXXXXXXXXX, at build time).
 const GA_ID = (import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined) || "";
 
@@ -96,8 +94,9 @@ function buildHead(meta: AppMeta) {
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "canonical", href: STORE.url + "/" },
-      ...(favicon ? [{ rel: "icon", href: favicon }] : []),
+      ...(favicon ? [{ rel: "icon", href: favicon, type: "image/png" }] : []),
+      { rel: "icon", href: "/favicon.ico", sizes: "any" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
     ],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(localBusinessJsonLd(ogImage)) },
@@ -191,25 +190,6 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
-
-  useEffect(() => {
-    if (!__HF_DESIGN_INSPECTOR__) {
-      return;
-    }
-
-    void import("../module/design-inspector/runtime")
-      .then(({ installHiggsfieldDesignInspector }) => {
-        installHiggsfieldDesignInspector();
-      })
-      .catch((error) => {
-        reportHiggsfieldError(
-          error instanceof Error ? error : new Error("Failed to load design inspector"),
-          {
-            boundary: "higgsfield_design_inspector_import",
-          },
-        );
-      });
-  }, []);
 
   return (
     <QueryClientProvider client={queryClient}>

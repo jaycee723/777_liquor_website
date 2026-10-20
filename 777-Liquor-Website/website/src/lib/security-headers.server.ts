@@ -13,21 +13,21 @@ export function applySecurityHeaders(response: Response): Response {
   // `X-Frame-Options` (no cross-origin allowlist; SAMEORIGIN/DENY would blank
   // the preview) and leave framing entirely to the platform.
   headers.set(
-    'Content-Security-Policy',
+    "Content-Security-Policy",
     "default-src 'self'; " +
-      "script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com; " +
+      "script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com https://www.googletagmanager.com https://static.cloudflareinsights.com; " +
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; " +
       "font-src 'self' https://fonts.gstatic.com; " +
       "img-src 'self' data: https:; media-src 'self' https:; " +
-      "connect-src 'self' https:; " +
+      "connect-src 'self' https: https://cloudflareinsights.com; " +
       "frame-src 'self' https://challenges.cloudflare.com; " +
       "base-uri 'self'; form-action 'self'",
   );
-  headers.set('Strict-Transport-Security', 'max-age=63072000; includeSubDomains; preload');
-  headers.set('X-Content-Type-Options', 'nosniff');
-  headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
-  headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
-  headers.set('X-XSS-Protection', '0');
+  headers.set("Strict-Transport-Security", "max-age=63072000; includeSubDomains; preload");
+  headers.set("X-Content-Type-Options", "nosniff");
+  headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
+  headers.set("Permissions-Policy", "camera=(), microphone=(), geolocation=()");
+  headers.set("X-XSS-Protection", "0");
   return new Response(response.body, {
     status: response.status,
     statusText: response.statusText,
