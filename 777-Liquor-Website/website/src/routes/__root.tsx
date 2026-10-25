@@ -6,6 +6,7 @@ import {
   useRouter,
   HeadContent,
   Scripts,
+  type ErrorComponentProps,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 import { button } from "@higgsfield/quanta/button";
@@ -129,7 +130,7 @@ function NotFoundComponent() {
   );
 }
 
-function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
+function ErrorComponent({ error, reset }: ErrorComponentProps) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
@@ -173,14 +174,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" data-theme="default-dark" style={{ colorScheme: "dark" }}>
+    <html
+      lang="en"
+      data-theme="default-dark"
+      style={{ colorScheme: "dark" }}
+      suppressHydrationWarning
+    >
       {/* Marketplace apps are permanently dark: data-theme is pinned on <html>
           above. Do not add quanta's bootstrapScript/ThemeController, a theme
           toggle, or a light mode. */}
       <head>
         <HeadContent />
       </head>
-      <body className="bg-q-background-primary text-q-text-primary">
+      <body className="bg-q-background-primary text-q-text-primary" suppressHydrationWarning>
         {children}
         <Scripts />
       </body>

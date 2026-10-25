@@ -16,8 +16,12 @@ const QUANTA_ICONS_SHIM = fileURLToPath(
 );
 
 export default defineConfig(({ mode }) => {
-
   return {
+    server: {
+      host: "0.0.0.0",
+      port: 3000,
+      allowedHosts: true,
+    },
     resolve: {
       alias: [{ find: /^@higgsfield-ai\/icons(\/.*)?$/, replacement: QUANTA_ICONS_SHIM }],
     },
@@ -27,11 +31,31 @@ export default defineConfig(({ mode }) => {
     // server but throw "No such module" in a Worker. Bundle them all in.
     // (node: builtins stay external — nodejs_compat provides them.)
     ssr: {
-      noExternal: true,
+      ...(mode === "production" ? { noExternal: true } : {}),
       // `cloudflare:workers` is a workerd runtime built-in that exposes the Worker
       // env / bindings (D1 `DB`, R2 `STORAGE`). Like node: builtins it must NOT be
       // bundled; the runtime provides it. (`ssr.external` is typed string[].)
       external: ["cloudflare:workers"],
+    },
+    environments: {
+      client: {
+        build: {
+          rollupOptions: {
+            input: {
+              index: "virtual:tanstack-start-client-entry",
+            },
+          },
+        },
+      },
+      ssr: {
+        build: {
+          rollupOptions: {
+            input: {
+              server: "virtual:tanstack-start-server-entry",
+            },
+          },
+        },
+      },
     },
     build: {
       // Keep `cloudflare:*` external in the SSR rollup pass too — `noExternal`
@@ -48,9 +72,7 @@ export default defineConfig(({ mode }) => {
           icon: true,
           svgProps: { fill: "currentColor" },
           svgoConfig: {
-            plugins: [
-              { name: "preset-default", params: { overrides: { removeViewBox: false } } },
-            ],
+            plugins: [{ name: "preset-default", params: { overrides: { removeViewBox: false } } }],
           },
         },
       }),

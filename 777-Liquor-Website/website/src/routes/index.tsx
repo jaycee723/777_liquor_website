@@ -173,13 +173,7 @@ function Home() {
       </a>
       <header className="nav">
         <a className="logo" href="#top" aria-label="777 Liquor home">
-          <img
-            src="/brands/Generated%20image.webp"
-            width="85"
-            height="52"
-            alt=""
-            decoding="async"
-          />
+          <img src="/brands/logo.webp" width="85" height="52" alt="" decoding="async" />
           <span>LIQUOR</span>
         </a>
         <nav aria-label="Main navigation">
@@ -216,7 +210,7 @@ function Home() {
         </div>
         <div className="hero-card beverage-scene">
           <svg viewBox="0 0 420 330" width="420" height="330" aria-hidden="true" focusable="false">
-            <ellipse cx="210" cy="295" rx="165" ry="15" fill="#12494a" opacity=".10" />
+            <ellipse cx="210" cy="295" rx="165" ry="15" fill="#12494a" opacity="0.1" />
             <g className="drink-float bottle">
               <rect x="180" y="30" width="32" height="24" rx="5" fill="#12494a" />
               <path
